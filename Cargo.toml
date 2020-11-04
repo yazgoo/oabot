@@ -1,0 +1,7 @@
+[package]
+name = "oabot"
+version = "0.0.1"
+edition = "2018"
+[dependencies]
+serenity = "0.9.0-rc.4"
+tokio = "0.2"
