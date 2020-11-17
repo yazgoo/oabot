@@ -104,7 +104,7 @@ async fn change_chan(ctx: Arc<Context>, chan: String) {
     let http = &ctx.http;
     let guild = cache.guilds().await[0];
     let guild = cache.guild(guild).await.unwrap();
-    let member = guild.member_named("oab").unwrap();
+    let member = guild.member_named("Oab").unwrap();
     let id = guild.channel_id_from_name(cache, chan).await.unwrap();
     let _ = member.move_to_voice_channel(http, id).await;
 }
